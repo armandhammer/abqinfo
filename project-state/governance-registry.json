@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "267a6a160a5b1cc1ad0b86ea9cf400be2493708c1251d541cbe5b6d646a3262f",
+  "audit_sha256": "751af96a95de3b848c168e18e8de83950a5132288c1236b13cd1a3e808574691",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -36387,6 +36387,69 @@
       "settled_decisions": [],
       "unresolved_gates": [],
       "implementation_status": "Additive ordinary-review supplement; no supersession of existing rules."
+    },
+    {
+      "governance_id": "owner-mrcog-map-coverage-2026-10-14",
+      "category": "active owner decision",
+      "title": "Bounded MRCOG catalog audit and supplied live map PR",
+      "scope": {
+        "task_ids": [
+          "mrcog-map-coverage-2026-10-14"
+        ]
+      },
+      "authority": "Explicit current owner request dated 2026-10-14",
+      "decision_date": "2026-10-14",
+      "effective_date": "2026-10-14",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/mrcog-map-coverage-2026-10-14/authority.json",
+          "sha256": "7e03fd4e7063f93bce545abf5e7ac2dd69d9aeff5cedd0b2ff92fb0e78dec4ec",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Audit public MRCOG/MRMPO catalogs without reopening settled decisions. Review supplied map under existing quality rules and use existing Chrome/Playwright inspection as explicitly authorized. Only the supplied map may be added in one unmerged visitor-visible PR after qualification. No application mirroring, R2 mutations, merge or production deployment.",
+      "required_actions": [],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "in_progress"
+    },
+    {
+      "governance_id": "decision-mrcog-map-coverage-2026-10-14-supplied-live-map",
+      "category": "active publication architecture",
+      "title": "One qualified MRCOG live planning/classification reference",
+      "scope": {
+        "candidate_ids": [
+          "src-1a6c3f00995ac229"
+        ],
+        "task_ids": [
+          "mrcog-map-coverage-2026-10-14"
+        ]
+      },
+      "authority": "Codex substantive assessment implementing explicit current owner task dated 2026-10-14; no manual content-merge approval implied",
+      "decision_date": "2026-10-14",
+      "effective_date": "2026-10-14",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/mrcog-map-coverage-2026-10-14/decision.json",
+          "sha256": "0c87dfc5725c793632755c1122fbb69b741c275a1a126e7c4022f766a1948b35",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Represent the supplied integrated live MRCOG map once on Maps under Regional Long-Range Transportation Maps, using its actual rendered title and explicit modeled-road-ownership and omitted-local-road qualifications. Preserve all settled resources and originals. Underlying web map and layers are components, not separate entries. No R2 copy, merge or production deployment.",
+      "required_actions": [],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "publication_pending_manual_review"
     }
   ]
 }

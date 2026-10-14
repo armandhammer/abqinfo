@@ -1,0 +1,31 @@
+{
+  "task": "mrcog-map-coverage-2026-10-14",
+  "state": "audit_and_one_map_entry_complete_full_validation_running",
+  "baseline_commit": "6d4947c874b14b450efbb80f2a29660eebf76a33",
+  "supplied_id": "src-1a6c3f00995ac229",
+  "existing_inventory_rows_changed": 0,
+  "new_inventory_rows": 1,
+  "public_page": "content/maps-data/maps.md",
+  "r2_operations": 0,
+  "r2_added_bytes": 0,
+  "storage_size_warnings": 0,
+  "existing_r2_snapshot": "project-state/r2-inventory.json",
+  "r2_snapshot_generated_at": "2026-10-13T03:39:30.7789724Z",
+  "catalog_unique_local_item_ids": 1017,
+  "coverage_report": "project-state/governance/mrcog-map-coverage-2026-10-14/coverage.md",
+  "rendered_evidence": [
+    "project-state/governance/mrcog-map-coverage-2026-10-14/render-2.json",
+    "project-state/governance/mrcog-map-coverage-2026-10-14/render-3.json"
+  ],
+  "source_service_evidence": [
+    "project-state/governance/mrcog-map-coverage-2026-10-14/layer-checks.json",
+    "project-state/governance/mrcog-map-coverage-2026-10-14/roadway-service.json",
+    "project-state/governance/mrcog-map-coverage-2026-10-14/planning-service.json"
+  ],
+  "import_repair": "Existing import tool normalized 800 unrelated timestamp strings; exact-delta guard stopped further work. Restored every baseline row exactly, retained only the new map row, and applied its assessment with existing Update-CandidatesBatch.py.",
+  "remaining": [
+    "full_validation",
+    "preview",
+    "unmerged_pr"
+  ]
+}

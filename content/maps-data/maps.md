@@ -32,6 +32,10 @@ Interactive maps of city data and infrastructure.
 
 ### Regional Long-Range Transportation Maps
 
+- [MRCOG Planning Areas and Roadway Functional Classification (Live Map)](https://mrcogmaps.org/portal/apps/instant/sidebar/index.html?appid=15c077acdfd248aea4d7d15f528f51c1)
+
+  Maps Albuquerque’s metropolitan planning boundary, adjusted urban areas, roadway functional classifications, and regional jurisdictions. This live MRCOG viewer provides searchable geography, a legend, and layer controls. Road ownership is modeled and not authoritative; roads omitted from the classification layer should be treated as local.
+
 - [Albuquerque Metropolitan Planning Area Boundary Map (2020)](https://files.abqinfo.com/maps/mrmpo-albuquerque-metropolitan-planning-area-map-2020.pdf)
 
   Maps the official Albuquerque Metropolitan Planning Area boundary and member jurisdictions used for federally required metropolitan transportation planning, programming, data analysis, and regional coordination.
