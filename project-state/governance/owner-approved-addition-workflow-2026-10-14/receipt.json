@@ -3,7 +3,7 @@
   "baseline_commit": "c04c5a0e22aa29fa6663e2aa6b1c2e1b65c1e04b",
   "proposal_commit": "333615170910b039f45e4987936c4e1bf6da1dd3",
   "pr220_merge": "c04c5a0e22aa29fa6663e2aa6b1c2e1b65c1e04b",
-  "state": "Implementation complete; mandatory full validation passed; background integration pending",
+  "state": "complete",
   "visible_changes": 0,
   "r2_operations": 0,
   "r2_added_bytes": 0,
@@ -14,9 +14,7 @@
     "policy-publication-quality": "policy-publication-quality-owner-approved-additions"
   },
   "contracts_reason": "Initial complete resolution; one replacement required by changed authority/registry/audit. Population unchanged.",
-  "remaining": [
-    "background-only integration"
-  ],
+  "remaining": [],
   "checkpoint_commit": "989442a23b07e23a3a32f709c56375645e98aa98",
   "validation": {
     "command": "pwsh -NoProfile -File scripts/project/Invoke-ProjectValidation.ps1",
@@ -40,5 +38,13 @@
     "script_changes": 0,
     "r2_operations": 0,
     "r2_added_bytes": 0
-  }
+  },
+  "blockers": [],
+  "integration": "project-state/governance/owner-approved-addition-workflow-2026-10-14/integration.json",
+  "completed_utc": "2026-10-14T21:55:47.692208+00:00",
+  "commits": {
+    "checkpoint": "989442a2",
+    "validated_integration": "d53c84328a1567e06b34c4d76b5add1d06f62d88"
+  },
+  "deferred": "Validation-system optimization remains a separate, unimplemented task. No PR220 production closeout was performed."
 }

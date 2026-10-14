@@ -1,6 +1,6 @@
 # Current project state
 
-Owner-approved addition workflow implemented; full normal validation passed; background integration pending. Explicit exact-resource add requests settle editorial inclusion and invoke safeguarded exact-original R2 authority. Four scoped supersessions preserve ordinary review gates and specific settled decisions. No content, inventory, validator or R2 changes.
+Owner-approved addition workflow complete. Full normal validation passed; background-only main/planning integration verified (see task receipt). Explicit exact-resource add requests settle editorial inclusion and invoke safeguarded exact-original R2 authority. Four scoped supersessions preserve ordinary review gates and specific settled decisions. No content, inventory, validator or R2 changes.
 
 PR #220 is merged at c04c5a0e (remote verified); no production/document closeout performed by this policy task. Preserved proposal read from its branch without wholesale merge. Validation-system optimization is a separate task.
 
