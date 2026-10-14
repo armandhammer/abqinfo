@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "source_url": "https://mrcogmaps.org/server/rest/services/RoadwayInventory/Roadway_Overlays/FeatureServer",
+  "title": "Roadway overlays",
+  "agency": "MRCOG",
+  "retrieved_at": "2026-10-14T20:21:20.1641140Z",
+  "discovery_method": "Deterministic ArcGIS REST service, layer-metadata, and feature-count review",
+  "crawl_status": "relevant ArcGIS dependency frontier exhausted",
+  "proposed_canonical_page": "content/transportation/transportation-plans.md",
+  "service": {
+    "arcgis_version": 11.5,
+    "description": "",
+    "service_description": "",
+    "copyright": "",
+    "capabilities": [
+      "Query"
+    ],
+    "supported_query_formats": [
+      "JSON"
+    ]
+  },
+  "layers": [
+    {
+      "id": 0,
+      "name": "Overlay_Road_Names_and_Owners",
+      "type": "Feature Layer",
+      "geometry_type": "esriGeometryPolyline",
+      "description": "",
+      "feature_count_at_review": 1008,
+      "capabilities": [
+        "Query"
+      ],
+      "supported_query_formats": [
+        "JSON",
+        "geoJSON",
+        "PBF"
+      ],
+      "fields": [
+        {
+          "name": "OBJECTID",
+          "alias": "OBJECTID",
+          "type": "esriFieldTypeOID"
+        },
+        {
+          "name": "RoadName",
+          "alias": "RoadName",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "RoadAddr",
+          "alias": "RoadAddr",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "RdNameAlt1",
+          "alias": "RdNameAlt1",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "RdNameAlt2",
+          "alias": "RdNameAlt2",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "RdNameAlt3",
+          "alias": "RdNameAlt3",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "RdNameNote",
+          "alias": "RdNameNote",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "Owner",
+          "alias": "Owner",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "OwnerSrc",
+          "alias": "OwnerSrc",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "OwnerNote",
+          "alias": "OwnerNote",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "Shape__Length",
+          "alias": "Shape.STLength()",
+          "type": "esriFieldTypeDouble"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Overlay_Road_FuncClass_and_Names",
+      "type": "Feature Layer",
+      "geometry_type": "esriGeometryPolyline",
+      "description": "",
+      "feature_count_at_review": 1034,
+      "capabilities": [
+        "Query"
+      ],
+      "supported_query_formats": [
+        "JSON",
+        "geoJSON",
+        "PBF"
+      ],
+      "fields": [
+        {
+          "name": "OBJECTID",
+          "alias": "OBJECTID",
+          "type": "esriFieldTypeOID"
+        },
+        {
+          "name": "FuncClass",
+          "alias": "FuncClass",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "FC_Note",
+          "alias": "FC_Note",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "FC_Year",
+          "alias": "FC_Year",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "RoadName",
+          "alias": "RoadName",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "RoadAddr",
+          "alias": "RoadAddr",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "RdNameAlt1",
+          "alias": "RdNameAlt1",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "RdNameAlt2",
+          "alias": "RdNameAlt2",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "RdNameAlt3",
+          "alias": "RdNameAlt3",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "RdNameNote",
+          "alias": "RdNameNote",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "name": "Shape__Length",
+          "alias": "Shape.STLength()",
+          "type": "esriFieldTypeDouble"
+        }
+      ]
+    }
+  ],
+  "archival_reconciliation": {
+    "new_uploads_required": 0,
+    "reason": "This is a maintained live ArcGIS service rather than a static authoritative document. Preserve direct map and data-service links; archive a separate source document only if the service exposes one."
+  },
+  "site_action": "Candidate live reference pending rendered usability review; no publication or R2 action.",
+  "processing_notes": [
+    "The root service and every published sublayer were reviewed through official REST metadata.",
+    "Feature counts are audit observations and are not fixed claims for ABQInfo content.",
+    "No PDF, spreadsheet, document attachment, or static map is implied by an ArcGIS service unless separately recorded."
+  ]
+}

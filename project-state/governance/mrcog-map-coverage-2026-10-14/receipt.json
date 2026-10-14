@@ -1,0 +1,61 @@
+{
+  "task": "mrcog-map-coverage-2026-10-14",
+  "state": "complete_open_unmerged_pr_awaiting_manual_owner_review",
+  "baseline_commit": "6d4947c874b14b450efbb80f2a29660eebf76a33",
+  "supplied_id": "src-1a6c3f00995ac229",
+  "existing_inventory_rows_changed": 0,
+  "new_inventory_rows": 1,
+  "public_page": "content/maps-data/maps.md",
+  "r2_operations": 0,
+  "r2_added_bytes": 0,
+  "storage_size_warnings": 0,
+  "existing_r2_snapshot": "project-state/r2-inventory.json",
+  "r2_snapshot_generated_at": "2026-10-13T03:39:30.7789724Z",
+  "catalog_unique_local_item_ids": 1017,
+  "coverage_report": "project-state/governance/mrcog-map-coverage-2026-10-14/coverage.md",
+  "rendered_evidence": [
+    "project-state/governance/mrcog-map-coverage-2026-10-14/render-2.json",
+    "project-state/governance/mrcog-map-coverage-2026-10-14/render-3.json"
+  ],
+  "source_service_evidence": [
+    "project-state/governance/mrcog-map-coverage-2026-10-14/layer-checks.json",
+    "project-state/governance/mrcog-map-coverage-2026-10-14/roadway-service.json",
+    "project-state/governance/mrcog-map-coverage-2026-10-14/planning-service.json"
+  ],
+  "import_repair": "Existing import tool normalized 800 unrelated timestamp strings; exact-delta guard stopped further work. Restored every baseline row exactly, retained only the new map row, and applied its assessment with existing Update-CandidatesBatch.py.",
+  "remaining": [
+    "manual_owner_pr_review"
+  ],
+  "validation": {
+    "command": "pwsh -NoProfile -File scripts/project/Invoke-ProjectValidation.ps1",
+    "exit_code": 0,
+    "log": "project-state/governance/mrcog-map-coverage-2026-10-14/validation.log",
+    "completed_at": "2026-10-14T21:09:01.083961+00:00",
+    "full_external_link_sweep": false,
+    "targeted_link_verification": "Supplied anonymous app, web map and all twelve layer queries; actual Chrome source and desktop/mobile preview."
+  },
+  "preview": "project-state/governance/mrcog-map-coverage-2026-10-14/preview.json",
+  "retained_source_queue": {
+    "before": 657,
+    "after": 658,
+    "missing": 0,
+    "preexisting_records_unchanged": true,
+    "new_root_status": "crawled"
+  },
+  "map_created_at": "2026-09-03T18:45:40.316000+00:00",
+  "map_modified_at": "2026-09-22T15:04:40.478000+00:00",
+  "discovery_observation": "The supplied public Enterprise item is absent from the official nine-app gallery and was created after the saved August 4 long-range-map crawl. This is a catalog/outbound-discovery gap; no crawler redesign or substantive mirror was attempted.",
+  "pull_request": {
+    "number": 220,
+    "url": "https://github.com/armandhammer/abqinfo/pull/220",
+    "state": "OPEN",
+    "isDraft": false,
+    "headRefOid": "32dfbc2ce7a933f330a966f3cb3c87e12c685165",
+    "baseRefName": "main",
+    "mergedAt": null
+  },
+  "validated_work_commit": "32dfbc2ce7a933f330a966f3cb3c87e12c685165",
+  "reviewed_content_tree_oid": "800e619893e8635011ce0059f63ad97d2405f03f",
+  "merge_authorized": false,
+  "production_deployment_authorized": false
+}

@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "source_url": "https://mrcogmaps.org/server/rest/services/Planning_Areas/Planning_Areas/FeatureServer",
+  "title": "MRCOG planning areas",
+  "agency": "MRCOG",
+  "retrieved_at": "2026-10-14T20:23:55.9248525Z",
+  "discovery_method": "Deterministic ArcGIS REST service, layer-metadata, and feature-count review",
+  "crawl_status": "relevant ArcGIS dependency frontier exhausted",
+  "proposed_canonical_page": "content/transportation/transportation-plans.md",
+  "service": {
+    "arcgis_version": 11.5,
+    "description": "",
+    "service_description": "",
+    "copyright": "",
+    "capabilities": [
+      "Query"
+    ],
+    "supported_query_formats": [
+      "JSON"
+    ]
+  },
+  "layers": [
+    {
+      "id": 0,
+      "name": "AMPA",
+      "type": "Feature Layer",
+      "geometry_type": "esriGeometryPolygon",
+      "description": "The boundary of the Albuquerque Metropolitan Planning Area (AMPA) was adopted in 2012 by the Metropolitan Transportation Board of the Mid-Region Council of Governments of New Mexico through resolution R-12-13 MTB. The 2012 boundary expanded the AMPA to include all of Valencia County, Bernalillo County, and the southeastern portion of Sandoval County. Metropolitan Planning Organizations (MPOs) are required by federal law for all urbanized areas with populations greater than 50,000. MPO's are responsible for carrying out metropolitan transportation plans and programs. The MPO for the AMPA is the Mid-Region Metropolitan Planning Organization. The Metropolitan Transportation Board, composed of local elected leaders, sets policy for transportation issues in the urban area.",
+      "feature_count_at_review": 1,
+      "capabilities": [
+        "Query"
+      ],
+      "supported_query_formats": [
+        "JSON",
+        "geoJSON",
+        "PBF"
+      ],
+      "fields": [
+        {
+          "name": "OBJECTID",
+          "alias": "OBJECTID",
+          "type": "esriFieldTypeOID"
+        },
+        {
+          "name": "AMPA",
+          "alias": "AMPA",
+          "type": "esriFieldTypeSmallInteger"
+        },
+        {
+          "name": "SqMiles",
+          "alias": "SqMiles",
+          "type": "esriFieldTypeDouble"
+        },
+        {
+          "name": "Shape__Area",
+          "alias": "Shape.STArea()",
+          "type": "esriFieldTypeDouble"
+        },
+        {
+          "name": "Shape__Length",
+          "alias": "Shape.STLength()",
+          "type": "esriFieldTypeDouble"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "MRCOG",
+      "type": "Feature Layer",
+      "geometry_type": "esriGeometryPolygon",
+      "description": "Established in 1969, the Mid-Region Council of Governments of New Mexico (MRCOG) is an association of local governments and special units of government within the state's third planning district. MRCOG provides planning services in the areas of transportation, agriculture, workforce development, employment growth, land-use, water, and economic development. ",
+      "feature_count_at_review": 1,
+      "capabilities": [
+        "Query"
+      ],
+      "supported_query_formats": [
+        "JSON",
+        "geoJSON",
+        "PBF"
+      ],
+      "fields": [
+        {
+          "name": "OBJECTID",
+          "alias": "OBJECTID",
+          "type": "esriFieldTypeOID"
+        },
+        {
+          "name": "Shape__Area",
+          "alias": "Shape.STArea()",
+          "type": "esriFieldTypeDouble"
+        },
+        {
+          "name": "Shape__Length",
+          "alias": "Shape.STLength()",
+          "type": "esriFieldTypeDouble"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "MRRTPO",
+      "type": "Feature Layer",
+      "geometry_type": "esriGeometryPolygon",
+      "description": "Established in 1969, the Mid-Region Council of Governments of New Mexico (MRCOG) is an association of local governments and special units of government within the state's third planning district. MRCOG provides planning services in the areas of transportation, agriculture, workforce development, employment growth, land-use, water, and economic development. ",
+      "feature_count_at_review": 2,
+      "capabilities": [
+        "Query"
+      ],
+      "supported_query_formats": [
+        "JSON",
+        "geoJSON",
+        "PBF"
+      ],
+      "fields": [
+        {
+          "name": "OBJECTID",
+          "alias": "OBJECTID",
+          "type": "esriFieldTypeOID"
+        },
+        {
+          "name": "Shape__Area",
+          "alias": "Shape.STArea()",
+          "type": "esriFieldTypeDouble"
+        },
+        {
+          "name": "Shape__Length",
+          "alias": "Shape.STLength()",
+          "type": "esriFieldTypeDouble"
+        }
+      ]
+    }
+  ],
+  "archival_reconciliation": {
+    "new_uploads_required": 0,
+    "reason": "This is a maintained live ArcGIS service rather than a static authoritative document. Preserve direct map and data-service links; archive a separate source document only if the service exposes one."
+  },
+  "site_action": "Candidate live reference pending rendered usability review; no publication or R2 action.",
+  "processing_notes": [
+    "The root service and every published sublayer were reviewed through official REST metadata.",
+    "Feature counts are audit observations and are not fixed claims for ABQInfo content.",
+    "No PDF, spreadsheet, document attachment, or static map is implied by an ArcGIS service unless separately recorded."
+  ]
+}
