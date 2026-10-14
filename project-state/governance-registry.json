@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "14cb86860b63419d0922c18b8b4516d0e7ecac91963d21362605e55352671930",
+  "audit_sha256": "555ede866de4a8543af5ec7e16e357e3c22ac6c8a4fa7e18dcb9f2e0156e9e0f",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -17089,7 +17089,7 @@
       "authority": "standing project policy / explicit owner instruction",
       "decision_date": null,
       "effective_date": "as recorded in controlling artifact; no chronology precedence",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/discovery/mission-scope-review-policy-2026-09-22.json",
@@ -17109,7 +17109,9 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
-      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
+      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority.",
+      "superseded_by": "policy-mission-scope-owner-approved-additions",
+      "supersession_evidence": "project-state/governance/owner-approved-addition-workflow-2026-10-14/authority.json"
     },
     {
       "governance_id": "policy-mission-scope-legacy",
@@ -17218,7 +17220,7 @@
       "authority": "standing project policy / explicit owner instruction",
       "decision_date": null,
       "effective_date": "as recorded in controlling artifact; no chronology precedence",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "project-state/publication-quality-policy.md",
@@ -17239,7 +17241,9 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
-      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
+      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority.",
+      "superseded_by": "policy-publication-quality-owner-approved-additions",
+      "supersession_evidence": "project-state/governance/owner-approved-addition-workflow-2026-10-14/authority.json"
     },
     {
       "governance_id": "policy-quality-exclusions",
@@ -36094,11 +36098,11 @@
       "authority": "standing project policy / explicit owner instruction",
       "decision_date": null,
       "effective_date": "2026-10-12",
-      "state": "active",
+      "state": "superseded",
       "controlling_artifacts": [
         {
           "path": "AGENTS.md",
-          "sha256": "c250f36a85dfb6392682088e663dc88200ed2701d4aa53d6f586afcb554e116d",
+          "sha256": "46571c518ada8869587782e7f47ee6c71a745527e09f6bb88aa152475948f6fc",
           "binding_pointers": [
             "/"
           ]
@@ -36130,7 +36134,9 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
-      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
+      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority.",
+      "superseded_by": "policy-agents-owner-approved-additions",
+      "supersession_evidence": "project-state/governance/owner-approved-addition-workflow-2026-10-14/authority.json"
     },
     {
       "governance_id": "owner-lead-coal-historical-review-2026-10-12-publication-authorized-postmerge-fastpath-repair",
@@ -36273,7 +36279,7 @@
       "governance_id": "owner-supplied-document-fastpath",
       "category": "active project-wide policy",
       "title": "Bounded ordinary owner-supplied intake and narrow closeout",
-      "state": "active",
+      "state": "superseded",
       "scope": {
         "global": true
       },
@@ -36290,7 +36296,7 @@
         },
         {
           "path": "project-state/owner-supplied-document-workflow.md",
-          "sha256": "31215c7edfa5860998fc4ab1f44680d2985af9c2d49a0799826ec3c1bb05a310",
+          "sha256": "77461ce628e5ad8d15f641e483680599630c1d679b9597c2a6df7db1e8194945",
           "binding_pointers": [
             "/"
           ]
@@ -36334,7 +36340,9 @@
       "constraints": [],
       "settled_decisions": [],
       "unresolved_gates": [],
-      "implementation_status": "reusable procedure and existing lifecycle guard"
+      "implementation_status": "reusable procedure and existing lifecycle guard",
+      "superseded_by": "owner-supplied-workflow-owner-approved-additions",
+      "supersession_evidence": "project-state/governance/owner-approved-addition-workflow-2026-10-14/authority.json"
     },
     {
       "governance_id": "workflow-ordinary-discovery-triage",
@@ -36450,6 +36458,255 @@
       "settled_decisions": [],
       "unresolved_gates": [],
       "implementation_status": "publication_pending_manual_review"
+    },
+    {
+      "governance_id": "policy-agents-owner-approved-additions",
+      "category": "active project-wide policy",
+      "title": "Apply all ABQInfo instructions: scope, actual-record quality, exact archive provenance, owner review of visible changes, durable checkpoints and external-action authority",
+      "scope": {
+        "global": true
+      },
+      "authority": "Explicit current owner instruction implementing the scoped October 14 directive",
+      "decision_date": "2026-10-14",
+      "effective_date": "2026-10-14",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "46571c518ada8869587782e7f47ee6c71a745527e09f6bb88aa152475948f6fc",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/proposals/owner-supplied-document-fastpath-2026-10-12.md",
+          "sha256": "22f3a1db6c81dffead9c8a05a439e2f9bd17636ee20e99c3acf34687a19fa726",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/owner-supplied-document-fastpath-2026-10-12/authority.json",
+          "sha256": "da0bf4cf98bbe61325531d51605becf02d2d0c8211e548e5a942272581692d88",
+          "binding_pointers": [
+            "/proposals"
+          ]
+        },
+        {
+          "path": "project-state/proposals/routine-task-scope-budget-2026-10-14.md",
+          "sha256": "99dda96db8832440f3db955d49fe2229d24e6a98ec6e460b1cb1f94512522ae6",
+          "binding_pointers": [
+            "Owner-directed additions: editorial inclusion is already decided",
+            "Usage ceiling and allowed effort: owner-approved additions only",
+            "Implementation boundary: current authorized scope only"
+          ]
+        },
+        {
+          "path": "project-state/governance/owner-approved-addition-workflow-2026-10-14/authority.json",
+          "sha256": "c683b8149422b6dfc66c4d4eb855739e91d29d02c5e2354f4cc9dc02de2ebd4a",
+          "binding_pointers": [
+            "/proposals/policy-agents-owner-supplied-fastpath",
+            "/implemented_scope"
+          ]
+        }
+      ],
+      "binding_requirement": "Apply all ABQInfo instructions: scope, actual-record quality, exact archive provenance, owner review of visible changes, durable checkpoints and external-action authority. Scoped owner-directed exception: an explicitly bounded ordinary owner-supplied 1-3-document request into an existing section satisfies batch size; follow project-state/owner-supplied-document-workflow.md. Every other AGENTS protection remains unchanged. Only when the owner explicitly requests adding a specific resource by exact URL/file: inclusion is the final owner editorial decision; use concise factual schema-compliant scope/quality/publication evidence with the invocation, targeted identity/usability/provenance and placement checks, without independent mission-worthiness/information-density/standalone-value/admission re-adjudication or exhaustive PDF/entire-family reading beyond factual need. Exact requested population satisfies batching. Preserve specific settled exclusions/canonical-family decisions unless explicitly superseded, technical integrity, exact governance/freshness, required validation/preview and OPEN UNMERGED manual content review. Explicit add requests invoke exact-original R2 authority in AGENTS under all existing safeguards. Outside this class all previous requirements remain binding.",
+      "required_actions": [
+        "Follow current AGENTS.md with only the registered exact-item exception. Only when the owner explicitly requests adding a specific resource by exact URL/file: inclusion is the final owner editorial decision; use concise factual schema-compliant scope/quality/publication evidence with the invocation, targeted identity/usability/provenance and placement checks, without independent mission-worthiness/information-density/standalone-value/admission re-adjudication or exhaustive PDF/entire-family reading beyond factual need. Exact requested population satisfies batching. Preserve specific settled exclusions/canonical-family decisions unless explicitly superseded, technical integrity, exact governance/freshness, required validation/preview and OPEN UNMERGED manual content review. Explicit add requests invoke exact-original R2 authority in AGENTS under all existing safeguards. Outside this class all previous requirements remain binding."
+      ],
+      "prohibited_actions": [
+        "Do not infer new external authorization from this artifact."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
+    },
+    {
+      "governance_id": "owner-supplied-workflow-owner-approved-additions",
+      "category": "active project-wide policy",
+      "title": "Bounded ordinary owner-supplied intake and narrow closeout",
+      "state": "active",
+      "scope": {
+        "global": true
+      },
+      "authority": "Explicit current owner instruction implementing the scoped October 14 directive",
+      "decision_date": "2026-10-14",
+      "effective_date": "2026-10-14",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/proposals/owner-supplied-document-fastpath-2026-10-12.md",
+          "sha256": "22f3a1db6c81dffead9c8a05a439e2f9bd17636ee20e99c3acf34687a19fa726",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/owner-supplied-document-workflow.md",
+          "sha256": "77461ce628e5ad8d15f641e483680599630c1d679b9597c2a6df7db1e8194945",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/governance/owner-supplied-document-fastpath-2026-10-12/authority.json",
+          "sha256": "da0bf4cf98bbe61325531d51605becf02d2d0c8211e548e5a942272581692d88",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "scripts/project/WorkflowStageLifecycle.py",
+          "sha256": "f734386bf3efab889bc6aa8a1c7e18becfde521e97511eeb377319191ea92947",
+          "binding_pointers": [
+            "/implementation"
+          ]
+        },
+        {
+          "path": "scripts/project/Test-WorkflowStageLifecycle.py",
+          "sha256": "8481591d5bfe95912e5c28fb2017fc7dcf85bd471fdb54a6851e47b7ce91aed9",
+          "binding_pointers": [
+            "/implementation"
+          ]
+        },
+        {
+          "path": "scripts/project/LeadCoalHistoricalPublication.py",
+          "sha256": "0d0e177782566f1027ac5e759fd5787b7c737a2fa5b6e86aafd357445a777ea6",
+          "binding_pointers": [
+            "/implementation"
+          ]
+        },
+        {
+          "path": "project-state/proposals/routine-task-scope-budget-2026-10-14.md",
+          "sha256": "99dda96db8832440f3db955d49fe2229d24e6a98ec6e460b1cb1f94512522ae6",
+          "binding_pointers": [
+            "Owner-directed additions: editorial inclusion is already decided",
+            "Usage ceiling and allowed effort: owner-approved additions only",
+            "Implementation boundary: current authorized scope only"
+          ]
+        },
+        {
+          "path": "project-state/governance/owner-approved-addition-workflow-2026-10-14/authority.json",
+          "sha256": "c683b8149422b6dfc66c4d4eb855739e91d29d02c5e2354f4cc9dc02de2ebd4a",
+          "binding_pointers": [
+            "/proposals/owner-supplied-document-fastpath",
+            "/implemented_scope"
+          ]
+        }
+      ],
+      "binding_requirement": "Follow the bounded owner-supplied intake procedure for explicitly named ordinary 1-3-document tasks. Preserve complete registry resolution, immutable populations/contracts and freshness, substantive scope/quality/provenance/family gates, exact authorized originals and archive verification, manual content PR review and production verification. Reuse the existing active task exact-delta guard; retain sealed historical intervals and evidence. No per-document workflow framework or unconditional contract regeneration. Only when the owner explicitly requests adding a specific resource by exact URL/file: inclusion is the final owner editorial decision; use concise factual schema-compliant scope/quality/publication evidence with the invocation, targeted identity/usability/provenance and placement checks, without independent mission-worthiness/information-density/standalone-value/admission re-adjudication or exhaustive PDF/entire-family reading beyond factual need. Exact requested population satisfies batching. Preserve specific settled exclusions/canonical-family decisions unless explicitly superseded, technical integrity, exact governance/freshness, required validation/preview and OPEN UNMERGED manual content review. Explicit add requests invoke exact-original R2 authority in AGENTS under all existing safeguards. Outside this class all previous requirements remain binding.",
+      "required_actions": [
+        "Use the registered procedure within its exact eligibility and authority boundaries.",
+        "Only when the owner explicitly requests adding a specific resource by exact URL/file: inclusion is the final owner editorial decision; use concise factual schema-compliant scope/quality/publication evidence with the invocation, targeted identity/usability/provenance and placement checks, without independent mission-worthiness/information-density/standalone-value/admission re-adjudication or exhaustive PDF/entire-family reading beyond factual need. Exact requested population satisfies batching. Preserve specific settled exclusions/canonical-family decisions unless explicitly superseded, technical integrity, exact governance/freshness, required validation/preview and OPEN UNMERGED manual content review. Explicit add requests invoke exact-original R2 authority in AGENTS under all existing safeguards. Outside this class all previous requirements remain binding."
+      ],
+      "prohibited_actions": [
+        "No automatic visitor-visible PR merge; no external authority inferred from folder placement."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "reusable procedure and existing lifecycle guard"
+    },
+    {
+      "governance_id": "policy-mission-scope-owner-approved-additions",
+      "category": "active project-wide policy",
+      "title": "Apply both material Albuquerque connection and substantive public-information value gates; require complete structured positive assessment for every eligible changed state; exclude definitive failures and cap exclusive borderline queue at 20",
+      "scope": {
+        "global": true
+      },
+      "authority": "Explicit current owner instruction implementing the scoped October 14 directive",
+      "decision_date": "2026-10-14",
+      "effective_date": "2026-10-14",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/discovery/mission-scope-review-policy-2026-09-22.json",
+          "sha256": "1c4f9b3d20f6b42ea5bbc96f30bcd259f0deb0b211b471b9ae174311fabb883d",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/proposals/routine-task-scope-budget-2026-10-14.md",
+          "sha256": "99dda96db8832440f3db955d49fe2229d24e6a98ec6e460b1cb1f94512522ae6",
+          "binding_pointers": [
+            "Owner-directed additions: editorial inclusion is already decided",
+            "Usage ceiling and allowed effort: owner-approved additions only",
+            "Implementation boundary: current authorized scope only"
+          ]
+        },
+        {
+          "path": "project-state/governance/owner-approved-addition-workflow-2026-10-14/authority.json",
+          "sha256": "c683b8149422b6dfc66c4d4eb855739e91d29d02c5e2354f4cc9dc02de2ebd4a",
+          "binding_pointers": [
+            "/proposals/policy-mission-scope",
+            "/implemented_scope"
+          ]
+        }
+      ],
+      "binding_requirement": "Apply both material Albuquerque connection and substantive public-information value gates; require complete structured positive assessment for every eligible changed state; exclude definitive failures and cap exclusive borderline queue at 20. Only when the owner explicitly requests adding a specific resource by exact URL/file: inclusion is the final owner editorial decision; use concise factual schema-compliant scope/quality/publication evidence with the invocation, targeted identity/usability/provenance and placement checks, without independent mission-worthiness/information-density/standalone-value/admission re-adjudication or exhaustive PDF/entire-family reading beyond factual need. Exact requested population satisfies batching. Preserve specific settled exclusions/canonical-family decisions unless explicitly superseded, technical integrity, exact governance/freshness, required validation/preview and OPEN UNMERGED manual content review. Explicit add requests invoke exact-original R2 authority in AGENTS under all existing safeguards. Outside this class all previous requirements remain binding.",
+      "required_actions": [
+        "Apply both material Albuquerque connection and substantive public-information value gates; require complete structured positive assessment for every eligible changed state; exclude definitive failures and cap exclusive borderline queue at 20.",
+        "Only when the owner explicitly requests adding a specific resource by exact URL/file: inclusion is the final owner editorial decision; use concise factual schema-compliant scope/quality/publication evidence with the invocation, targeted identity/usability/provenance and placement checks, without independent mission-worthiness/information-density/standalone-value/admission re-adjudication or exhaustive PDF/entire-family reading beyond factual need. Exact requested population satisfies batching. Preserve specific settled exclusions/canonical-family decisions unless explicitly superseded, technical integrity, exact governance/freshness, required validation/preview and OPEN UNMERGED manual content review. Explicit add requests invoke exact-original R2 authority in AGENTS under all existing safeguards. Outside this class all previous requirements remain binding."
+      ],
+      "prohibited_actions": [
+        "Do not infer new external authorization from this artifact."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
+    },
+    {
+      "governance_id": "policy-publication-quality-owner-approved-additions",
+      "category": "active project-wide policy",
+      "title": "Assess actual records and complete families independently of scope/provenance/rendering; preserve negative findings; no consolidation exemption or unsupported limited-content exception",
+      "scope": {
+        "global": true
+      },
+      "authority": "Explicit current owner instruction implementing the scoped October 14 directive",
+      "decision_date": "2026-10-14",
+      "effective_date": "2026-10-14",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/publication-quality-policy.md",
+          "sha256": "b5c9233de11a310b7ed4fa984fce99ab2e070e82766819b0ec09336ea94254e6",
+          "binding_pointers": [
+            "/"
+          ]
+        },
+        {
+          "path": "project-state/proposals/routine-task-scope-budget-2026-10-14.md",
+          "sha256": "99dda96db8832440f3db955d49fe2229d24e6a98ec6e460b1cb1f94512522ae6",
+          "binding_pointers": [
+            "Owner-directed additions: editorial inclusion is already decided",
+            "Usage ceiling and allowed effort: owner-approved additions only",
+            "Implementation boundary: current authorized scope only"
+          ]
+        },
+        {
+          "path": "project-state/governance/owner-approved-addition-workflow-2026-10-14/authority.json",
+          "sha256": "c683b8149422b6dfc66c4d4eb855739e91d29d02c5e2354f4cc9dc02de2ebd4a",
+          "binding_pointers": [
+            "/proposals/policy-publication-quality",
+            "/implemented_scope"
+          ]
+        }
+      ],
+      "binding_requirement": "Assess actual records and complete families independently of scope/provenance/rendering; preserve negative findings; no consolidation exemption or unsupported limited-content exception. Only when the owner explicitly requests adding a specific resource by exact URL/file: inclusion is the final owner editorial decision; use concise factual schema-compliant scope/quality/publication evidence with the invocation, targeted identity/usability/provenance and placement checks, without independent mission-worthiness/information-density/standalone-value/admission re-adjudication or exhaustive PDF/entire-family reading beyond factual need. Exact requested population satisfies batching. Preserve specific settled exclusions/canonical-family decisions unless explicitly superseded, technical integrity, exact governance/freshness, required validation/preview and OPEN UNMERGED manual content review. Explicit add requests invoke exact-original R2 authority in AGENTS under all existing safeguards. Outside this class all previous requirements remain binding.",
+      "required_actions": [
+        "Assess actual records and complete families independently of scope/provenance/rendering; preserve negative findings; no consolidation exemption or unsupported limited-content exception.",
+        "# Enforceable publication-quality lifecycle\n\nPublication value is a separate decision from mission scope, source authenticity, checksum identity, successful archiving, visual rendering and link validation. `PublicationQuality.py` evaluates the actual inventory record's durable `publication_quality_decision`; validated status is not a quality approval.\n\nBefore any new or changed record can enter/remain in implemented or validated status, the inventory update tools run the actual-record gate. Visible implementation validators explicitly call `validate_affected_records`. Completed production audits use `validate_completed_implementation`: they still evaluate each current record and can report only exact, unchanged, sealed remediation debt; without a completed production closeout they require every actual candidate to pass. A sealed historical workflow stage validates its original historical population and evidence and cannot authorize a current publication transition.\n\nThe complete normal suite audits all current visible implemented/validated inventory records by matching their actual URLs throughout content, rather than trusting saved placement fields. It also checks changed implemented/validated inventory records against the adoption baseline even when no content link exists. Every failure must either be remediated with an evidence-backed passing decision or remain exactly within the enumerated legacy debt witness. The witness is not an approval, not grandfathering and not a switch that disables the gate. New debt, changed unresolved inventory rows, new placements or increased link counts fail. Subsequent cleanup stages may shrink the debt set, but must preserve its original historical witness and their own exact-delta safeguards.\n\nAssessments address document function, substantive content, durable usefulness, information density, uniqueness, series/component relationships, publication form, currentness when relevant and concrete rationale. Every 1–2-page standalone document or otherwise limited record requires a concrete limited-content assessment, including specific substance, unique durable use, why shortness suffices and evidence. No page-count ban applies to useful signed instruments, maps, tables or concise findings. Dated guidelines, regulations, criteria, procedures, checklists, fees and operational references require an authoritative currentness/supersession finding and publication qualification.\n\nPublic engagement is evaluated by function. Raw charts, official data, participant counts and distributions alone do not establish standalone value. An engagement assessment must identify analysis, formal findings/action or other durable unique information. No minimum-participant threshold applies. Components must conform to an evidence-backed aggregation decision; a standalone exception must establish distinct value.\n\nNegative/questionable September 13 findings and the owner's Old Town rejection remain durable contradictions until explicitly superseded by identified findings and new evidence. Future negative decisions must be preserved as historical evidence with stable finding IDs, rather than overwritten when a new assessment reverses them. Corrections advance through sealed historical stages and new exact-delta guards; they never rewrite the original evidence.\n",
+        "Only when the owner explicitly requests adding a specific resource by exact URL/file: inclusion is the final owner editorial decision; use concise factual schema-compliant scope/quality/publication evidence with the invocation, targeted identity/usability/provenance and placement checks, without independent mission-worthiness/information-density/standalone-value/admission re-adjudication or exhaustive PDF/entire-family reading beyond factual need. Exact requested population satisfies batching. Preserve specific settled exclusions/canonical-family decisions unless explicitly superseded, technical integrity, exact governance/freshness, required validation/preview and OPEN UNMERGED manual content review. Explicit add requests invoke exact-original R2 authority in AGENTS under all existing safeguards. Outside this class all previous requirements remain binding."
+      ],
+      "prohibited_actions": [
+        "Do not infer new external authorization from this artifact."
+      ],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
     }
   ]
 }
