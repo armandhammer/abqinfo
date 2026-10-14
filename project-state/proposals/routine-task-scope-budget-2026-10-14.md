@@ -1,6 +1,20 @@
 # Owner directive — make routine ABQInfo tasks bounded again
 
-**Status:** owner-directed proposed operating rule, staged for governed integration; not active until reconciled with the full governance registry. This is a scope/execution rule, NOT permission to bypass existing governance, scope, quality, archive, validation, preview, or manual visitor-visible PR gates.
+**Status:** explicit owner instruction, staged for governed registration and scoped supersession. This is a new owner editorial decision and an execution-scope rule, NOT permission to bypass technical integrity, archive authenticity, governance freshness, mandatory repository validation, preview, or manual visitor-visible PR gates.
+
+## Owner-directed additions: editorial inclusion is already decided
+
+When the owner says **“add this map/document/link to the site”** and supplies an exact URL or file, treat this as the owner's **final affirmative editorial decision to include that identified resource**, not a request for Codex to debate whether it belongs on ABQInfo. Do not perform a second mission-worthiness, information-density, standalone-value, or publication-admission investigation; do not send an already decided question back to the owner. This is different from **“find,” “evaluate,” “should we add,” “review,”** or unspecified discovery, which retain normal selective quality gates.
+
+For this explicit, named-item class, the owner now **authorizes a narrow exception to any previous automatic editorial re-adjudication, exhaustive PDF quality review, entire-family reading, and 15–30-item batching requirements** to the extent those requirements impose extra review beyond what is factually needed to place and accurately describe the requested item. Identify/register the exact active governance IDs in an explicit *scoped supersession* before implementation; do not silently disregard prior rules. Retain inventory schema compliance: existing mandatory `scope_assessment` and `quality_assessment` fields may be populated with **concise factual evidence and the owner's explicit inclusion authorization**, rather than pretending that a full independent editorial review took place. Preserve already-settled decisions on *other* items; an exact owner-requested addition that conflicts with a settled exclusion or canonical-family decision requires explicit conflict/supersession handling, not an expansive search.
+
+The **only ordinary actions** for an approved named item are:
+1. Resolve the exact link/document, its authentic title/date and obvious limitations; compare against the exact URL/file/hash already in inventory and the likely existing site page/heading. Check close cross-listing opportunities on those existing pages, **not the whole agency or portal**.
+2. Choose the best existing page/section, create a useful neutral 1–3 sentence description, and add only justified cross-reference(s). A known draft/dated/historical item may be included accurately labeled as such when owner requested; investigate only if identity or factual wording cannot be established.
+3. For a **static downloadable document**, the owner's directive to add it **also explicitly authorizes archival of that exact unchanged original to R2 under the existing limits**, provided it is reachable/authentic, is not already preserved, has an absent target key, fits file-size/storage ceilings, and normal before/after checks (source SHA-256/size, public byte comparison, saved intent/receipt) pass. Register this narrow standing authority in AGENTS and durable governance; it is not blanket authority to upload other files. No overwrite, deletion, compression/substitution, or capacity circumvention. For a live ArcGIS map/app, link it as a **live service**: do not attempt an R2 application mirror.
+4. Run existing required repository tests once when ready, verify the actual changed-section nonproduction preview, and leave the visitor-visible PR **OPEN AND UNMERGED** for owner inspection.
+
+**Mechanical accuracy/safety is still required**: broken URLs, misleading identity, unreadable/corrupt PDFs, archive mismatch, unexpected replacement of existing material, protected external actions, or a genuine conflict with a binding prior owner decision are reasons for a specific blocker. Do not convert a routine task into a research campaign, set up new tests, enumerate the issuer's catalog, or manufacture hundreds of thousands of lines of evidence. Do not quietly claim a full review was performed when only targeted checks were done.
 
 ## Routine task = exactly the requested deliverable
 
@@ -12,7 +26,7 @@ Target **5–10 minutes** for ordinary additions when existing infrastructure is
 
 For a simple link or live map:
 - Inspect the exact URL/app ID, rendered usefulness when relevant, publisher/official evidence, dates/status/caveats, existing inventory, duplicate/family relationships and target heading.
-- Freeze/resolve complete applicable governance using existing tooling; perform required structured scope/quality assessment and freshness checks for any mutation.
+- Freeze/resolve complete applicable governance using existing tooling; record the owner-approved inclusion and **concise factual** scope/quality assessment in the required schema, with freshness checks for any mutation. Do not re-adjudicate the owner's affirmative inclusion decision.
 - Prefer one concise live link and description on an existing page. No static/R2 archive for an interactive app unless separately justified and authorized.
 - Run existing required validation once after changes settle, verify the changed-section preview, and open a **content PR unmerged** for owner review.
 - Use existing scripts and receipts; **no new validators, Python modules, inventories of unrelated sources, wholesale catalog exports, full-site audits, bulk revisions to unrelated inventory timestamps, or repeated full-suite retries** unless an exact failure requires it and is authorized. Do not “repair the framework” as part of a routine content task.
@@ -24,6 +38,6 @@ A request to audit all maps or sources is **a different kind of task** requiring
 
 ## Implementation boundary
 
-Register this scoped owner instruction under durable governance using the existing resolver. Make only the smallest change to an existing standing workflow/AGENTS pointer; do not design a new task-management engine. Preserve all active rules absent an explicitly documented authorized supersession. No R2 mutation, visitor-visible content edits, legacy evidence deletion, or changes to the MRCOG in-flight branch as part of integrating this rule. Integrate background-only changes only after mandatory checks pass.
+Register this scoped owner instruction under durable governance using the existing resolver. Make only the smallest change to an existing standing workflow/AGENTS pointer; do not design a new task-management engine. Explicitly register the precise owner-authorized exception above for named additions, and preserve all other active rules absent documented authorized supersession. No R2 mutation, visitor-visible content edits, legacy evidence deletion, or changes to the MRCOG in-flight branch as part of integrating this rule. Integrate background-only changes only after mandatory checks pass.
 
 **Acceptance test:** the next ordinary named live-map/link request results in a narrow reviewed content PR, not an exhaustive audit of the host organization; if the 5–10 minute target is missed, the recorded blocker identifies why without uncontrolled task expansion.
