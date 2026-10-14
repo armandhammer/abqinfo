@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-08T00:21:25.8764430Z",
+  "generated_at": "2026-10-14T20:58:47.8896354Z",
   "policy": "Every retained active government webpage is a document-discovery root. Recursively review relevant child pages and archive qualifying attached documents; access-controlled pages require rendered-browser review rather than silent completion.",
   "allowed_statuses": [
     "pending descendant crawl",
@@ -11,7 +11,7 @@
   ],
   "counts": {
     "pending descendant crawl": 476,
-    "crawled": 180,
+    "crawled": 181,
     "requires rendered-browser review": 1,
     "excluded": 0,
     "superseded": 0
@@ -10786,6 +10786,24 @@
       ],
       "created_at": "2026-10-08T00:21:25.8764430Z",
       "updated_at": "2026-10-08T00:21:25.8764430Z"
+    },
+    {
+      "candidate_id": "src-1a6c3f00995ac229",
+      "source_url": "https://mrcogmaps.org/portal/apps/instant/sidebar/index.html?appid=15c077acdfd248aea4d7d15f528f51c1",
+      "title": "MRCOG Planning Areas and Roadway Functional Classification",
+      "agency": "Mid-Region Council of Governments",
+      "canonical_page": "content/maps-data/maps.md",
+      "audit_status": "crawled",
+      "crawl_output": "project-state/governance/mrcog-map-coverage-2026-10-14/supplied-map.json",
+      "discovered_documents": 0,
+      "archived_documents": 0,
+      "processing_notes": [
+        "Exact owner-supplied app configuration, its public web map, and all twelve operational layer endpoints reviewed.",
+        "App-specific dependency frontier contains integrated map/service components, with no separately attached static original identified. No application mirror or R2 operation.",
+        "Catalog enumeration and anonymous Chrome usability evidence are retained in project-state/governance/mrcog-map-coverage-2026-10-14/coverage.md and render-3.json."
+      ],
+      "created_at": "2026-10-14T20:58:47.8896354Z",
+      "updated_at": "2026-10-14T20:58:47.8896354Z"
     }
   ]
 }
