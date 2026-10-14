@@ -1,6 +1,6 @@
 {
-  "recorded_at": "2026-10-14T20:43:52.1480702Z",
-  "completed_item_range": "MRCOG public catalogs audited; supplied live map reviewed and implemented in unmerged review branch.",
+  "recorded_at": "2026-10-14T22:24:58.896811+00:00",
+  "completed_item_range": "PR #220 merged publication and live-map destination verified; supplied record validated/passed. Validation and branch results recorded in closeout receipt.",
   "total_candidates": 7146,
   "counts_by_status": {
     "pending review": 332,
@@ -10,8 +10,8 @@
     "parsed": 0,
     "description drafted": 0,
     "placement assigned": 360,
-    "implemented": 224,
-    "validated": 1497,
+    "implemented": 223,
+    "validated": 1498,
     "excluded": 2870,
     "duplicate": 1602,
     "superseded": 260,
@@ -21,7 +21,7 @@
   "remaining_nonterminal": 884,
   "next_pending_id": "lin-2f6fbe4ffb0b6564",
   "blockers": [],
-  "resume_command": "Read CURRENT and MRCOG coverage receipt. Finish validation/preview and open the supplied-map PR; then await manual owner review. No merge, production deployment or R2 action.",
+  "resume_command": "Read CURRENT and PR220 closeout receipt for final validation and branch-ref results; map discovery and review are complete.",
   "verification_campaign_totals": {
     "verified": 2194,
     "passed": 2070,
@@ -39765,5 +39765,17 @@
         }
       }
     }
-  ]
+  ],
+  "pr220_postmerge_closeout": {
+    "state": "production_verified_record_validated",
+    "candidate_ids": [
+      "src-1a6c3f00995ac229"
+    ],
+    "receipt": "project-state/governance/pr220-postmerge-closeout-2026-10-14/receipt.json",
+    "production_verification": "project-state/governance/pr220-postmerge-closeout-2026-10-14/production-verification.json",
+    "merge_commit": "c04c5a0e22aa29fa6663e2aa6b1c2e1b65c1e04b",
+    "production_url": "https://abqinfo.com/maps-data/maps/#regional-long-range-transportation-maps",
+    "r2_added_bytes": 0,
+    "integration_receipt": "project-state/governance/pr220-postmerge-closeout-2026-10-14/integration.json"
+  }
 }

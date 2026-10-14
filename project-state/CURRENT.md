@@ -1,9 +1,7 @@
 # Current project state
 
-Owner-approved addition workflow complete. Full normal validation passed; background-only main/planning integration verified (see task receipt). Explicit exact-resource add requests settle editorial inclusion and invoke safeguarded exact-original R2 authority. Four scoped supersessions preserve ordinary review gates and specific settled decisions. No content, inventory, validator or R2 changes.
+PR #220 merge c04c5a0e and production MRCOG Planning Areas and Roadway Functional Classification live-map entry verified. Reviewed/merged/current content trees match; live destination and legend work. Exact map record validated/passed. Existing reviews reused; no content or R2 changes. Full normal validation passed. Background main/planning-snapshot reconciliation pending.
 
-PR #220 is merged at c04c5a0e (remote verified); no production/document closeout performed by this policy task. Preserved proposal read from its branch without wholesale merge. Validation-system optimization is a separate task.
-
-[Task receipt](governance/owner-approved-addition-workflow-2026-10-14/receipt.json) | [Authority](governance/owner-approved-addition-workflow-2026-10-14/authority.json) | [Procedure](owner-supplied-document-workflow.md) | [Active task](governance/active-task.json) | [Queue](ordinary-queue-current.json) | [Workflow](governance-workflow.md) | [Registry](governance-registry.json).
+[Closeout receipt](governance/pr220-postmerge-closeout-2026-10-14/receipt.json) | [Production evidence](governance/pr220-postmerge-closeout-2026-10-14/production-verification.json) | [Active task](governance/active-task.json) | [Queue](ordinary-queue-current.json) | [Workflow](governance-workflow.md) | [Registry](governance-registry.json).
 
 [Owner correction](governance/pr207-owner-correction-2026-09-30/receipt.json) | [Closeout](governance/pr207-postmerge-closeout-2026-09-30/receipt.json) | [Refs](governance/pr207-final-ref-verification-2026-09-30/final-verification.json) | [Triage](governance/approved-queue-lightweight-triage-2026-09-30/triage.json).

@@ -12,7 +12,7 @@
   ],
   "precedence_rule": "No newest-artifact precedence. Active until explicit authorized supersession.",
   "audit_artifact": "project-state/governance/audit-2026-09-27/artifact-audit.json",
-  "audit_sha256": "555ede866de4a8543af5ec7e16e357e3c22ac6c8a4fa7e18dcb9f2e0156e9e0f",
+  "audit_sha256": "530db70c74d1c018cef6168f3a6dc2bb3d28f33f6b160bb09222782857aa3584",
   "entries": [
     {
       "governance_id": "authorization-profile-ordinary-review-large",
@@ -36707,6 +36707,36 @@
       "settled_decisions": [],
       "unresolved_gates": [],
       "implementation_status": "Preserve continuing consequence; completion receipts do not confer new authority."
+    },
+    {
+      "governance_id": "owner-pr220-postmerge-closeout-2026-10-14",
+      "category": "active owner decision",
+      "title": "Narrow PR220 post-merge publication-state closeout",
+      "scope": {
+        "task_ids": [
+          "pr220-postmerge-closeout-2026-10-14"
+        ]
+      },
+      "authority": "Explicit current owner closeout request dated 2026-10-14",
+      "decision_date": "2026-10-14",
+      "effective_date": "2026-10-14",
+      "state": "active",
+      "controlling_artifacts": [
+        {
+          "path": "project-state/governance/pr220-postmerge-closeout-2026-10-14/authority.json",
+          "sha256": "0c4e08b5fd1acabe193e77dbe71e38f6e9066b597d0ebf988d96914b8f373687",
+          "binding_pointers": [
+            "/"
+          ]
+        }
+      ],
+      "binding_requirement": "Observe the existing merge and production publication; update only the supplied record publication state and closeout pointers, validate, and reconcile background-only main/planning-snapshot. No new merge/deployment of visitor-visible content or R2 operations; existing map architecture and assessments retained.",
+      "required_actions": [],
+      "prohibited_actions": [],
+      "constraints": [],
+      "settled_decisions": [],
+      "unresolved_gates": [],
+      "implementation_status": "authorized_closeout"
     }
   ]
 }

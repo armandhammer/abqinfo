@@ -1,0 +1,31 @@
+{
+  "task": "pr220-postmerge-closeout-2026-10-14",
+  "state": "validated_background_integration_pending",
+  "baseline_commit": "023eb4215fceefe9dc7a60044d87745e978cdec0",
+  "candidate_ids": [
+    "src-1a6c3f00995ac229"
+  ],
+  "production_verification": "project-state/governance/pr220-postmerge-closeout-2026-10-14/production-verification.json",
+  "publication_state": {
+    "before": "implemented",
+    "after": "validated",
+    "validation_status": "passed"
+  },
+  "reused_assessment": "project-state/governance/mrcog-map-coverage-2026-10-14/decision.json",
+  "original_review_receipt_preserved": "project-state/governance/mrcog-map-coverage-2026-10-14/receipt.json",
+  "visitor_visible_changes": 0,
+  "r2_operations": 0,
+  "r2_added_bytes": 0,
+  "storage_size_warnings": 0,
+  "unresolved": [],
+  "validation": {
+    "state": "passed",
+    "command": "pwsh -NoProfile -File scripts/project/Invoke-ProjectValidation.ps1",
+    "log": "project-state/governance/pr220-postmerge-closeout-2026-10-14/validation.log",
+    "exit_code": 0,
+    "completed_utc": "2026-10-14T22:46:00.113422+00:00"
+  },
+  "integration": "project-state/governance/pr220-postmerge-closeout-2026-10-14/integration.json",
+  "derived_state": "Only empty consolidated-human-review queue inventory SHA256 refreshed; existing deterministic regeneration check passed.",
+  "exact_delta": "One candidate only: status, updated_at, processing_notes; all other rows, scope/quality/provenance reviews, visitor-visible files and R2 state unchanged."
+}
