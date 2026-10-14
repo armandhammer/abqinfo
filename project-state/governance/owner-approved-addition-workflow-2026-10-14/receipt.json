@@ -3,7 +3,7 @@
   "baseline_commit": "c04c5a0e22aa29fa6663e2aa6b1c2e1b65c1e04b",
   "proposal_commit": "333615170910b039f45e4987936c4e1bf6da1dd3",
   "pr220_merge": "c04c5a0e22aa29fa6663e2aa6b1c2e1b65c1e04b",
-  "state": "Owner-approved workflow and four scoped supersessions implemented; mandatory validation/integration pending",
+  "state": "Implementation complete; mandatory full validation passed; background integration pending",
   "visible_changes": 0,
   "r2_operations": 0,
   "r2_added_bytes": 0,
@@ -15,8 +15,30 @@
   },
   "contracts_reason": "Initial complete resolution; one replacement required by changed authority/registry/audit. Population unchanged.",
   "remaining": [
-    "resolve replacement and check exact authority transition",
-    "mandatory full validation",
     "background-only integration"
-  ]
+  ],
+  "checkpoint_commit": "989442a23b07e23a3a32f709c56375645e98aa98",
+  "validation": {
+    "command": "pwsh -NoProfile -File scripts/project/Invoke-ProjectValidation.ps1",
+    "exit_code": 0,
+    "log": "project-state/governance/owner-approved-addition-workflow-2026-10-14/validation.log",
+    "log_sha256": "4cd8a2006e6d5a10866a8fc26e9bb84adda274cebc95ed0412b3f03bd588953d",
+    "runs": 1,
+    "governance_applicable_rules": 24,
+    "governance_conflicts": 0,
+    "governance_unresolved_gates": 0,
+    "external_link_check": false,
+    "preview": "No visitor-visible change; changed-section preview remains mandatory for future content PRs."
+  },
+  "implementation_diff": {
+    "agents": "Two paragraphs: owner-approved exact-resource path and exact-original R2 standing authority.",
+    "workflow": "Targeted owner-approved path with conditional existing intake steps; review-only and post-merge safeguards retained.",
+    "registry": "Four explicit scoped replacements; prior rules/evidence retained.",
+    "supporting_artifacts": "Two required resolver snapshots total 624166 bytes. Most added lines are existing resolved authority; no new framework, per-document module or validator.",
+    "visitor_visible_changes": 0,
+    "inventory_changes": 0,
+    "script_changes": 0,
+    "r2_operations": 0,
+    "r2_added_bytes": 0
+  }
 }
